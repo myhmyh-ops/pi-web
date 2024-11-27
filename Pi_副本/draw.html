@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线绘画 - Pineapple艺术工作室</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="draw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 添加导航栏 -->
+    <nav class="navbar">
+        <div class="nav-blur"></div>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Pineapple Studio" class="logo-img">
+                <span class="logo-text">Pineapple Studio</span>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="works.html" class="nav-link">作品集</a></li>
+                    <li><a href="store.html" class="nav-link">Store</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="mailto:myh20080924@iCloud.com" class="contact-btn">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 更新绘画应用容器的样式 -->
+    <div class="drawing-app">
+        <!-- 工具栏 -->
+        <div class="toolbar">
+            <div class="tool-section">
+                <h3>画笔工具</h3>
+                <button class="tool-btn" data-tool="brush" title="画笔">
+                    <i class="fas fa-paint-brush"></i>
+                </button>
+                <button class="tool-btn" data-tool="airbrush" title="气笔">
+                    <i class="fas fa-spray-can"></i>
+                </button>
+                <button class="tool-btn" data-tool="eraser" title="橡皮擦">
+                    <i class="fas fa-eraser"></i>
+                </button>
+                <button class="tool-btn" data-tool="circle" title="圆形">
+                    <i class="far fa-circle"></i>
+                </button>
+                <button class="tool-btn" data-tool="rectangle" title="矩形">
+                    <i class="far fa-square"></i>
+                </button>
+            </div>
+
+            <div class="tool-section">
+                <h3>画笔设置</h3>
+                <div class="brush-settings">
+                    <label>
+                        大小
+                        <input type="range" id="brushSize" min="1" max="50" value="5">
+                    </label>
+                    <label>
+                        透明度
+                        <input type="range" id="brushOpacity" min="1" max="100" value="100">
+                    </label>
+                    <label>
+                        颜色
+                        <input type="color" id="colorPicker" value="#000000">
+                    </label>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <h3>图层</h3>
+                <div class="layers-list" id="layersList">
+                    <!-- 图层将通过JS动态添加 -->
+                </div>
+                <button id="addLayer" class="action-btn">
+                    <i class="fas fa-plus"></i> 新建图层
+                </button>
+            </div>
+
+            <div class="tool-section">
+                <h3>操作</h3>
+                <button id="undo" class="action-btn" title="撤销">
+                    <i class="fas fa-undo"></i> 撤销
+                </button>
+                <button id="redo" class="action-btn" title="重做">
+                    <i class="fas fa-redo"></i> 重做
+                </button>
+                <button id="clear" class="action-btn" title="清空">
+                    <i class="fas fa-trash"></i> 清空
+                </button>
+                <button id="save" class="action-btn" title="保存">
+                    <i class="fas fa-save"></i> 保存
+                </button>
+            </div>
+        </div>
+
+        <!-- 画布容器 -->
+        <div class="canvas-container">
+            <div class="canvas-wrapper" id="canvasWrapper">
+                <!-- 图层画布将通过JS动态添加 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="draw.js"></script>
+</body>
+</html> 

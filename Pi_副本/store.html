@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定制服务 - Pineapple艺术工作室</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-blur"></div>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Pineapple Studio" class="logo-img">
+                <span class="logo-text">Pineapple Studio</span>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="works.html" class="nav-link">作品集</a></li>
+                    <li><a href="store.html" class="nav-link">Store</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="mailto:myh20080924@iCloud.com" class="contact-btn">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 商店主体内容 -->
+    <main class="store-container">
+        <!-- 服务介绍头部 -->
+        <div class="store-header">
+            <h1>艺术定制服务</h1>
+            <p class="service-intro">专业的肖像画与风景画定制，为您创造永恒的艺术回忆</p>
+            <div class="store-filters">
+                <button class="filter-btn active" data-filter="all">全部服务</button>
+                <button class="filter-btn" data-filter="portrait">肖像画</button>
+                <button class="filter-btn" data-filter="landscape">风景画</button>
+            </div>
+        </div>
+
+        <!-- 服务卡片网格 -->
+        <div class="products-grid">
+            <!-- 肖像画服务 -->
+            <div class="service-card portrait">
+                <div class="service-image">
+                    <img src="images/store/portrait-samples/sample1.jpg" alt="肖像画示例">
+                    <div class="service-overlay">
+                        <a href="contact.html" class="order-btn">立即定制</a>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h3>定制肖像画 - 素描风格</h3>
+                    <div class="service-details">
+                        <p>✓ 专业素描技法</p>
+                        <p>✓ 精细刻画五官细节</p>
+                        <p>✓ 7天完成</p>
+                        <p>✓ 包含实物照片和电子文件</p>
+                    </div>
+                    <div class="size-options">
+                        <span>尺寸选择：</span>
+                        <select class="size-select">
+                            <option value="small">A4 (21 x 29.7cm)</option>
+                            <option value="medium">A3 (29.7 x 42cm)</option>
+                            <option value="large">A2 (42 x 59.4cm)</option>
+                        </select>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">起价：¥10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card portrait">
+                <div class="service-image">
+                    <img src="images/store/portrait-color.jpg" alt="彩色肖像画示例">
+                    <div class="service-overlay">
+                        <a href="contact.html" class="order-btn">立即定制</a>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h3>定制肖像画 - 彩色风格</h3>
+                    <div class="service-details">
+                        <p>✓ 专业彩铅/水彩技法</p>
+                        <p>✓ 真实还原肤色与质感</p>
+                        <p>✓ 10天完成</p>
+                        <p>✓ 包含实物照片和电子文件</p>
+                    </div>
+                    <div class="size-options">
+                        <span>尺寸选择：</span>
+                        <select class="size-select">
+                            <option value="small">A4 (21 x 29.7cm)</option>
+                            <option value="medium">A3 (29.7 x 42cm)</option>
+                            <option value="large">A2 (42 x 59.4cm)</option>
+                        </select>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">起价：¥10</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 风景画服务 -->
+            <div class="service-card landscape">
+                <div class="service-image">
+                    <img src="images/store/landscape.jpg" alt="风景画示例">
+                    <div class="service-overlay">
+                        <a href="contact.html" class="order-btn">立即定制</a>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h3>定制风景画 - 水彩风格</h3>
+                    <div class="service-details">
+                        <p>✓ 专业水彩技法</p>
+                        <p>✓ 细腻展现自然光影</p>
+                        <p>✓ 14天完成</p>
+                        <p>✓ 包含实物照片和电子文件</p>
+                    </div>
+                    <div class="size-options">
+                        <span>尺寸选择：</span>
+                        <select class="size-select">
+                            <option value="small">A4 (21 x 29.7cm)</option>
+                            <option value="medium">A3 (29.7 x 42cm)</option>
+                            <option value="large">A2 (42 x 59.4cm)</option>
+                        </select>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">起价：¥10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 定制说明 -->
+        <div class="custom-info">
+            <h2>定制流程</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>选择服务</h3>
+                    <p>选择您喜欢的画作风格和尺寸</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>提供照片</h3>
+                    <p>上传清晰的参考照片</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>确认细节</h3>
+                    <p>与艺术家沟通具体需求</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>创作完成</h3>
+                    <p>收取作品并确认满意度</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 联系表单弹窗 -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>定制咨询</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">电话</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">需求描述</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">提交咨询</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="store.js"></script>
+</body>
+</html> 

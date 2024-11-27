@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - Pineapple艺术工作室</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 添加导航栏 -->
+    <nav class="navbar">
+        <div class="nav-blur"></div>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Pineapple Studio" class="logo-img">
+                <span class="logo-text">Pineapple Studio</span>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="works.html" class="nav-link">作品集</a></li>
+                    <li><a href="store.html" class="nav-link">Store</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="mailto:myh20080924@iCloud.com" class="contact-btn">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <!-- 联系页面头部 -->
+        <div class="contact-header">
+            <h1>联系我们</h1>
+            <p>无论您有任何问题或建议，我们都很乐意倾听</p>
+        </div>
+
+        <!-- 联系信息卡片 -->
+        <div class="contact-cards">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>电子邮件</h3>
+                <p>myh20080924@iCloud.com</p>
+                <a href="mailto:myh20080924@iCloud.com" class="contact-link">发送邮件</a>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>电话咨询</h3>
+                <p>暂不提供电话咨询</p>
+                <a href="tel:123" class="contact-link">暂不支持</a>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-comments"></i>
+                <h3>在线咨询</h3>
+                <p>工作时间实时回复</p>
+                <a href="#contact-form" class="contact-link">立即咨询</a>
+            </div>
+        </div>
+
+        <!-- 联系表单区域 -->
+        <div class="contact-content">
+            <div class="contact-form-container" id="contact-form">
+                <h2>发送消息</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">电话</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">请选择咨询主题</option>
+                            <option value="portrait">肖像画定制</option>
+                            <option value="landscape">风景画定制</option>
+                            <option value="other">其他咨询</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">消息内容</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FAQ部分 -->
+        <div class="faq-section">
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>定制流程是怎样的？</h3>
+                    <p>选择服务→提供照片→确认细节→创作完成→确认满意→作品交付</p>
+                </div>
+                <div class="faq-item">
+                    <h3>创作周期多长？</h3>
+                    <p>一般肖像画7-10天，风景画10-14天，具体视作品复杂度而定</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何保证作品质量？</h3>
+                    <p>我们有专业的艺术团队，每幅作品都经过多次确认和修改</p>
+                </div>
+                <div class="faq-item">
+                    <h3>支持哪些付款方式？</h3>
+                    <p>支持支付宝、微信、银行转账等多种付款方式</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 
